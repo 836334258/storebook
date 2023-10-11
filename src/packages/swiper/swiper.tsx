@@ -35,7 +35,7 @@ export interface SwiperProps extends BasicComponent {
   onChange?: (current: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   width: typeof window === 'object' ? window.innerWidth : 375,
   height: 0,
   duration: 500,

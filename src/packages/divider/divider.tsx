@@ -9,7 +9,7 @@ export interface DividerProps extends BasicComponent {
   contentPosition: ContentPositionType
   direction?: DirectionType
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   contentPosition: 'center',
   direction: 'horizontal',
