@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Calendar } from './calendar'
+import Calendar from './index'
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -24,24 +24,7 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const CalendarPrimary: Story = {
   args: {
-    type: 'single',
-    autoBackfill: false,
-    popup: true,
     visible: true,
-    title: '',
-    defaultValue: '',
-    showToday: true,
-    startText: '',
-    endText: '',
-    confirmText: '',
-    showTitle: true,
-    showSubTitle: true,
-    scrollAnimation: true,
-    firstDayOfWeek: 0,
-    renderHeaderButtons: undefined,
-    renderDay: undefined,
-    renderDayTop: undefined,
-    renderDayBottom: undefined,
   },
 }
 

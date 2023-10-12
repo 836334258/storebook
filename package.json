@@ -92,6 +92,7 @@
     "@babel/runtime": "^7.21.0",
     "@nutui/icons-react": "0.0.1",
     "@nutui/icons-react-taro": "0.0.1",
+    "@nutui/nutui-react": "^2.0.19",
     "@nutui/touch-emulator": "^1.0.0",
     "@react-spring/web": "~9.6.1",
     "@storybook/addon-storysource": "^7.4.6",
