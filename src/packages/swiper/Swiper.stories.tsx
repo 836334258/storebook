@@ -2,7 +2,6 @@ import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 import Swiper from './index'
-import { defaultProps } from './swiper'
 
 const list = [
   'https://storage.360buyimg.com/jdc-article/NutUItaro34.jpg',
@@ -44,6 +43,6 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    ...defaultProps,
+    
   },
 }

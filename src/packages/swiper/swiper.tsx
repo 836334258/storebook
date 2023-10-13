@@ -530,5 +530,5 @@ export const Swiper = React.forwardRef<
     </DataContext.Provider>
   )
 })
-Swiper.defaultProps = defaultProps
-Swiper.displayName = 'NutSwiper'
+// Swiper.defaultProps = defaultProps
+// Swiper.displayName = 'NutSwiper'
