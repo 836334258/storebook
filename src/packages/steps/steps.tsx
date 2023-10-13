@@ -58,5 +58,5 @@ export const Steps: FunctionComponent<
   )
 }
 
-Steps.defaultProps = defaultProps
-Steps.displayName = 'NutSteps'
+// // Steps.defaultProps = defaultProps
+// // Steps.displayName = 'NutSteps'

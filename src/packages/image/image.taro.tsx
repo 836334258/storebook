@@ -118,5 +118,5 @@ export const Image: FunctionComponent<Partial<ImageProps>> = (props) => {
   )
 }
 
-Image.defaultProps = defaultProps
-Image.displayName = 'NutImage'
+// Image.defaultProps = defaultProps
+// Image.displayName = 'NutImage'

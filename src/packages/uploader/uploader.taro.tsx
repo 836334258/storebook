@@ -533,5 +533,5 @@ const InternalUploader: ForwardRefRenderFunction<
 
 export const Uploader = React.forwardRef(InternalUploader)
 
-Uploader.defaultProps = defaultProps
-Uploader.displayName = 'NutUploader'
+// Uploader.defaultProps = defaultProps
+// Uploader.displayName = 'NutUploader'

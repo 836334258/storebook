@@ -404,5 +404,5 @@ export const Ellipsis: FunctionComponent<
   )
 }
 
-Ellipsis.defaultProps = defaultProps
-Ellipsis.displayName = 'NutEllipsis'
+// Ellipsis.defaultProps = defaultProps
+// Ellipsis.displayName = 'NutEllipsis'

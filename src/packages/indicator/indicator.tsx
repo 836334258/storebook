@@ -49,5 +49,5 @@ export const Indicator: FunctionComponent<
   )
 }
 
-Indicator.defaultProps = defaultProps
-Indicator.displayName = 'NutIndicator'
+// Indicator.defaultProps = defaultProps
+// Indicator.displayName = 'NutIndicator'

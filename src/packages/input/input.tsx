@@ -238,5 +238,5 @@ export const Input = forwardRef(
   }
 )
 
-Input.defaultProps = defaultProps
-Input.displayName = 'NutInput'
+// Input.defaultProps = defaultProps
+// Input.displayName = 'NutInput'

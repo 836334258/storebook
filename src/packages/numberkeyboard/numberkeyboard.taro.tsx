@@ -188,5 +188,5 @@ export const NumberKeyboard: FunctionComponent<
   )
 }
 
-NumberKeyboard.defaultProps = defaultProps
-NumberKeyboard.displayName = 'NutNumberKeyboard'
+// NumberKeyboard.defaultProps = defaultProps
+// NumberKeyboard.displayName = 'NutNumberKeyboard'

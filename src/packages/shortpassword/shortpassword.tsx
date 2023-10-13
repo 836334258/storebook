@@ -163,5 +163,5 @@ export const ShortPassword: FunctionComponent<Partial<ShortPasswordProps>> = (
   )
 }
 
-ShortPassword.defaultProps = defaultProps
-ShortPassword.displayName = 'NutShortPassword'
+// ShortPassword.defaultProps = defaultProps
+// ShortPassword.displayName = 'NutShortPassword'

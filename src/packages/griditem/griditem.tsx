@@ -120,5 +120,5 @@ export const GridItem: FunctionComponent<
   )
 }
 
-GridItem.defaultProps = defaultProps
-GridItem.displayName = 'NutGridItem'
+// GridItem.defaultProps = defaultProps
+// GridItem.displayName = 'NutGridItem'

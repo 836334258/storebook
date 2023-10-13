@@ -170,6 +170,6 @@ export const Radio: FunctionComponent<
   )
 }
 
-Radio.defaultProps = defaultProps
-Radio.displayName = 'NutRadio'
+// Radio.defaultProps = defaultProps
+// Radio.displayName = 'NutRadio'
 Radio.Group = RadioGroup

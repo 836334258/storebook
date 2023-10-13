@@ -149,5 +149,5 @@ export const Table: FunctionComponent<
   )
 }
 
-Table.defaultProps = defaultProps
-Table.displayName = 'NutTable'
+// Table.defaultProps = defaultProps
+// Table.displayName = 'NutTable'

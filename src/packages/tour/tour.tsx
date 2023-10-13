@@ -258,5 +258,5 @@ export const Tour: FunctionComponent<
   )
 }
 
-Tour.defaultProps = defaultProps
-Tour.displayName = 'NutTour'
+// // Tour.defaultProps = defaultProps
+// // Tour.displayName = 'NutTour'

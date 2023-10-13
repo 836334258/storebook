@@ -164,6 +164,6 @@ export const Checkbox: FunctionComponent<
   )
 }
 
-Checkbox.defaultProps = defaultProps
-Checkbox.displayName = 'NutCheckBox'
+// Checkbox.defaultProps = defaultProps
+// Checkbox.displayName = 'NutCheckBox'
 Checkbox.Group = CheckboxGroup

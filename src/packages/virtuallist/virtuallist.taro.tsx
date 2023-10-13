@@ -206,5 +206,5 @@ export const VirtualList: FunctionComponent<Partial<VirtualListProps>> = (
   )
 }
 
-VirtualList.defaultProps = defaultProps
-VirtualList.displayName = 'NutVirtualList'
+// VirtualList.defaultProps = defaultProps
+// VirtualList.displayName = 'NutVirtualList'

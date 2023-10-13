@@ -267,5 +267,5 @@ export const Audio: FunctionComponent<
   )
 }
 
-Audio.defaultProps = defaultProps
-Audio.displayName = 'NutAudio'
+// Audio.defaultProps = defaultProps
+// Audio.displayName = 'NutAudio'

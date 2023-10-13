@@ -876,5 +876,5 @@ export const CalendarItem = React.forwardRef<
   )
 })
 
-CalendarItem.defaultProps = defaultProps
-CalendarItem.displayName = 'NutCalendarItem'
+// CalendarItem.defaultProps = defaultProps
+// CalendarItem.displayName = 'NutCalendarItem'

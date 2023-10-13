@@ -145,5 +145,5 @@ export const TextArea: FunctionComponent<
   )
 }
 
-TextArea.defaultProps = defaultProps
-TextArea.displayName = 'NutTextArea'
+// TextArea.defaultProps = defaultProps
+// TextArea.displayName = 'NutTextArea'

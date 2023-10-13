@@ -182,5 +182,5 @@ const InternalSignature: ForwardRefRenderFunction<
 export const Signature = React.forwardRef<unknown, Partial<SignatureProps>>(
   InternalSignature
 )
-Signature.defaultProps = defaultProps
-Signature.displayName = 'NutSignature'
+// Signature.defaultProps = defaultProps
+// Signature.displayName = 'NutSignature'

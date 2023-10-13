@@ -231,5 +231,5 @@ export const Image: FunctionComponent<
   )
 }
 
-Image.defaultProps = defaultProps
-Image.displayName = 'NutImage'
+// Image.defaultProps = defaultProps
+// Image.displayName = 'NutImage'

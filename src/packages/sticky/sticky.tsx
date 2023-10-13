@@ -174,5 +174,5 @@ export const Sticky: FunctionComponent<Partial<StickyProps>> = (props) => {
   )
 }
 
-Sticky.defaultProps = defaultProps
-Sticky.displayName = 'NutSticky'
+// Sticky.defaultProps = defaultProps
+// Sticky.displayName = 'NutSticky'

@@ -146,5 +146,5 @@ export const PullToRefresh: FunctionComponent<Partial<PullToRefreshProps>> = (
   )
 }
 
-PullToRefresh.defaultProps = defaultProps
-PullToRefresh.displayName = 'NutPullToRefresh'
+// PullToRefresh.defaultProps = defaultProps
+// PullToRefresh.displayName = 'NutPullToRefresh'

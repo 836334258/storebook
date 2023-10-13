@@ -129,5 +129,5 @@ export const CircleProgress: FunctionComponent<
   )
 }
 
-CircleProgress.defaultProps = defaultProps
-CircleProgress.displayName = 'NutCircleProgress'
+// CircleProgress.defaultProps = defaultProps
+// CircleProgress.displayName = 'NutCircleProgress'

@@ -67,5 +67,5 @@ export const Col: FunctionComponent<
   )
 }
 
-Col.defaultProps = defaultProps
-Col.displayName = 'NutCol'
+// Col.defaultProps = defaultProps
+// Col.displayName = 'NutCol'

@@ -188,6 +188,6 @@ export const Avatar: FunctionComponent<
   )
 }
 
-// Avatar.defaultProps = defaultProps
-// Avatar.displayName = 'NutAvatar'
+// // Avatar.defaultProps = defaultProps
+// // Avatar.displayName = 'NutAvatar'
 // Avatar.Group = AvatarGroup

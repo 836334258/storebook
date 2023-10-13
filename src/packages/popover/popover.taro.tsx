@@ -361,5 +361,5 @@ export const Popover: FunctionComponent<
   )
 }
 
-Popover.defaultProps = defaultProps
-Popover.displayName = 'NutPopover'
+// Popover.defaultProps = defaultProps
+// Popover.displayName = 'NutPopover'

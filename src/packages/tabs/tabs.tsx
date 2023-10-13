@@ -262,6 +262,6 @@ export const Tabs: FunctionComponent<Partial<TabsProps>> & {
   )
 }
 
-Tabs.defaultProps = defaultProps
-Tabs.displayName = 'NutTabs'
+// Tabs.defaultProps = defaultProps
+// Tabs.displayName = 'NutTabs'
 Tabs.TabPane = TabPane

@@ -103,5 +103,5 @@ export const Progress: FunctionComponent<
   )
 }
 
-Progress.defaultProps = defaultProps
-Progress.displayName = 'NutProgress'
+// Progress.defaultProps = defaultProps
+// Progress.displayName = 'NutProgress'

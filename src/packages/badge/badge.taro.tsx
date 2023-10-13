@@ -59,5 +59,5 @@ export const Badge: FunctionComponent<Partial<BadgeProps>> = (props) => {
   )
 }
 
-Badge.defaultProps = defaultProps
-Badge.displayName = 'NutBadge'
+// Badge.defaultProps = defaultProps
+// Badge.displayName = 'NutBadge'

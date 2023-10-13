@@ -76,5 +76,5 @@ export const TimeDetail: FunctionComponent<
   )
 }
 
-TimeDetail.defaultProps = defaultProps
-TimeDetail.displayName = 'NutTimeDetail'
+// TimeDetail.defaultProps = defaultProps
+// TimeDetail.displayName = 'NutTimeDetail'

@@ -76,5 +76,5 @@ export const Row: FunctionComponent<
   )
 }
 
-Row.defaultProps = defaultProps
-Row.displayName = 'NutRow'
+// Row.defaultProps = defaultProps
+// Row.displayName = 'NutRow'

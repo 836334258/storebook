@@ -101,5 +101,5 @@ export const Drag: FunctionComponent<
   )
 }
 
-// Drag.defaultProps = defaultProps
-// Drag.displayName = 'NutDrag'
+// // Drag.defaultProps = defaultProps
+// // Drag.displayName = 'NutDrag'

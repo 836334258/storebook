@@ -326,6 +326,6 @@ export const Elevator: FunctionComponent<
   )
 }
 
-Elevator.defaultProps = defaultProps
-Elevator.displayName = 'NutElevator'
+// Elevator.defaultProps = defaultProps
+// Elevator.displayName = 'NutElevator'
 Elevator.Context = elevatorContext

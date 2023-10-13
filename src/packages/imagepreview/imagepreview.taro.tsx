@@ -314,5 +314,5 @@ export const ImagePreview: FunctionComponent<Partial<ImagePreviewProps>> = (
   )
 }
 
-ImagePreview.defaultProps = defaultProps
-ImagePreview.displayName = 'NutImagePreview'
+// ImagePreview.defaultProps = defaultProps
+// ImagePreview.displayName = 'NutImagePreview'

@@ -86,4 +86,4 @@ export const ConfigProvider: FunctionComponent<
   )
 }
 
-ConfigProvider.displayName = 'NutConfigProvider'
+// ConfigProvider.displayName = 'NutConfigProvider'

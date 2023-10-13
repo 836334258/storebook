@@ -220,5 +220,5 @@ export const SearchBar: FunctionComponent<
   )
 }
 
-SearchBar.defaultProps = defaultProps
-SearchBar.displayName = 'NutSearchBar'
+// SearchBar.defaultProps = defaultProps
+// SearchBar.displayName = 'NutSearchBar'

@@ -74,5 +74,5 @@ export const Video: FunctionComponent<
   )
 }
 
-Video.defaultProps = defaultProps
-Video.displayName = 'NutVideo'
+// Video.defaultProps = defaultProps
+// Video.displayName = 'NutVideo'

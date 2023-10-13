@@ -9,5 +9,5 @@ export const Layout: FunctionComponent<
   return <div className="nut-layout">Layout</div>
 }
 
-Layout.defaultProps = defaultProps
-Layout.displayName = 'NutLayout'
+// Layout.defaultProps = defaultProps
+// Layout.displayName = 'NutLayout'

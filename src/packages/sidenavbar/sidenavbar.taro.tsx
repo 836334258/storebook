@@ -78,5 +78,5 @@ export const SideNavBar: FunctionComponent<Partial<SideNavBarProps>> = (
   )
 }
 
-SideNavBar.defaultProps = defaultProps
-SideNavBar.displayName = 'NutSideNavBar'
+// SideNavBar.defaultProps = defaultProps
+// SideNavBar.displayName = 'NutSideNavBar'

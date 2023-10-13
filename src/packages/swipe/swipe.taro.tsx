@@ -284,5 +284,5 @@ export const Swipe = forwardRef<
   )
 })
 
-Swipe.defaultProps = defaultProps
-Swipe.displayName = 'NutSwipe'
+// Swipe.defaultProps = defaultProps
+// Swipe.displayName = 'NutSwipe'

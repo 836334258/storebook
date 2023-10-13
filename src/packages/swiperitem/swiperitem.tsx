@@ -42,5 +42,5 @@ export const SwiperItem = React.forwardRef<
     </div>
   )
 })
-SwiperItem.defaultProps = defaultProps
-SwiperItem.displayName = 'NutSwiperItem'
+// SwiperItem.defaultProps = defaultProps
+// SwiperItem.displayName = 'NutSwiperItem'

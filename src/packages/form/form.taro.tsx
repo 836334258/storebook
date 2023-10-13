@@ -104,5 +104,5 @@ export const Form = React.forwardRef<FormInstance, Partial<FormProps>>(
   }
 )
 
-Form.defaultProps = defaultProps
-Form.displayName = 'NutForm'
+// Form.defaultProps = defaultProps
+// Form.displayName = 'NutForm'

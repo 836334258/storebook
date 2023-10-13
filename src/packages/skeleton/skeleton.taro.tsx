@@ -98,5 +98,5 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
   )
 }
 
-Skeleton.defaultProps = defaultProps
-Skeleton.displayName = 'NutSkeleton'
+// Skeleton.defaultProps = defaultProps
+// Skeleton.displayName = 'NutSkeleton'

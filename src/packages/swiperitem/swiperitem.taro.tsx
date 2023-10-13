@@ -17,5 +17,5 @@ export const SwiperItem: FunctionComponent<Partial<SwiperItemProps>> = (
   const { children, ...rest } = props
   return <>{children}</>
 }
-SwiperItem.defaultProps = defaultProps
-SwiperItem.displayName = 'NutSwiperItem'
+// SwiperItem.defaultProps = defaultProps
+// SwiperItem.displayName = 'NutSwiperItem'

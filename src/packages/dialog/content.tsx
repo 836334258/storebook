@@ -57,4 +57,4 @@ export const Content: FunctionComponent<
   )
 }
 
-Content.displayName = 'NutContent'
+// Content.displayName = 'NutContent'

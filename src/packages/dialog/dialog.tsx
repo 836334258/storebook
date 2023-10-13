@@ -131,5 +131,5 @@ Dialog.confirm = (props: ConfirmProps): DialogReturnProps => {
   }
 })
 
-Dialog.defaultProps = defaultProps
-Dialog.displayName = 'NutDialog'
+// Dialog.defaultProps = defaultProps
+// Dialog.displayName = 'NutDialog'

@@ -130,5 +130,5 @@ export const Overlay: FunctionComponent<
   )
 }
 
-Overlay.defaultProps = defaultOverlayProps
-Overlay.displayName = 'NutOverlay'
+// Overlay.defaultProps = defaultOverlayProps
+// Overlay.displayName = 'NutOverlay'

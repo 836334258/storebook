@@ -143,5 +143,5 @@ export const Rate: FunctionComponent<Partial<RateProps>> = (props) => {
   )
 }
 
-Rate.defaultProps = defaultProps
-Rate.displayName = 'NutRate'
+// Rate.defaultProps = defaultProps
+// Rate.displayName = 'NutRate'

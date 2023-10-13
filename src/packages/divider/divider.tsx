@@ -43,5 +43,5 @@ export const Divider: FunctionComponent<
   )
 }
 
-// Divider.defaultProps = defaultProps
-// Divider.displayName = 'NutDivider'
+// // Divider.defaultProps = defaultProps
+// // Divider.displayName = 'NutDivider'

@@ -149,5 +149,5 @@ export const Tag: FunctionComponent<Partial<TagProps>> = (props) => {
   )
 }
 
-Tag.defaultProps = defaultProps
-Tag.displayName = 'NutTag'
+// Tag.defaultProps = defaultProps
+// Tag.displayName = 'NutTag'

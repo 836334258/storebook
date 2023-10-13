@@ -133,5 +133,5 @@ export const Price: FunctionComponent<Partial<PriceProps>> = (props) => {
   )
 }
 
-Price.defaultProps = defaultProps
-Price.displayName = 'NutPrice'
+// Price.defaultProps = defaultProps
+// Price.displayName = 'NutPrice'

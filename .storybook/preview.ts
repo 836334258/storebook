@@ -7,6 +7,9 @@ const preview: Preview = {
     docs: {
       toc: true, // 👈 Enables the table of contents
     },
+    args: {
+      visible: true, // 全局属性
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
