@@ -19,7 +19,7 @@ export interface CheckboxGroupProps {
   onChange: (value: string[]) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   max: undefined,
   labelPosition: 'right',
   direction: 'vertical',

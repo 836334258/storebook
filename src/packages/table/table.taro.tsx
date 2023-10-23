@@ -7,7 +7,7 @@ import { ComponentDefaults } from '@/utils/typings'
 
 export type TableProps = BasicTableProps
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   columns: [],
   data: [],

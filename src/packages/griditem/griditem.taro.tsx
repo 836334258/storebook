@@ -23,7 +23,7 @@ export interface GridItemProps extends BasicComponent {
   direction: GridDirection
 }
 
-const defaultProps = {
+export const defaultProps = {
   text: '',
   columns: 4,
   gap: 0,

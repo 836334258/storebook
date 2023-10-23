@@ -21,7 +21,7 @@ export interface WaterMarkProps extends BasicComponent {
   fontWeight: string
   fontSize: string | number
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   content: '',
   fullPage: true,

@@ -18,7 +18,7 @@ export interface AddressProps extends CascaderProps {
   height: string | number
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   type: 'custom',

@@ -10,7 +10,7 @@ export interface StepProps extends BasicComponent {
   icon: ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   title: '',
   description: '',

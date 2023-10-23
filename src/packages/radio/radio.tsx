@@ -21,7 +21,7 @@ export interface RadioProps extends BasicComponent {
   onChange: (checked: boolean) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   disabled: false,
   shape: 'round',

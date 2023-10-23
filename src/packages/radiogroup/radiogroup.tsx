@@ -18,7 +18,7 @@ export interface RadioGroupProps {
   onChange: (value: string | number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   labelPosition: 'right',
   onChange: (value: string | number) => {},
   direction: 'vertical',

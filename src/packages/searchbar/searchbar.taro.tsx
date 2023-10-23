@@ -39,7 +39,7 @@ export interface SearchBarProps extends BasicComponent {
   onInputClick?: (event: MouseEvent<HTMLInputElement>) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   placeholder: '',
   shape: 'square',

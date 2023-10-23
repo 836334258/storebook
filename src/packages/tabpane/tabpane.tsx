@@ -13,7 +13,7 @@ export interface TabPaneProps {
   children?: React.ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   title: '',
   value: '',
   disabled: false,

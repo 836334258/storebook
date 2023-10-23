@@ -58,7 +58,7 @@ export interface CalendarItemProps extends PopupProps {
   onDayClick: (data: string) => void
   onPageChange: (data: any) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'single',
   autoBackfill: false,

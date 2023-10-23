@@ -34,7 +34,7 @@ export interface RangeProps extends BasicComponent {
   onEnd: (value: RangeValue) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   range: false,
   min: 0,

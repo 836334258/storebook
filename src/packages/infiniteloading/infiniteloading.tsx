@@ -28,7 +28,7 @@ declare let window: Window & { webkitRequestAnimationFrame: any } & {
   mozRequestAnimationFrame: any
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   hasMore: true,
   threshold: 200,

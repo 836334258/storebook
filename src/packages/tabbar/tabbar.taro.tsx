@@ -14,7 +14,7 @@ export interface TabbarProps extends BasicComponent {
   onSwitch: (value: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   defaultValue: 0,
   fixed: false,

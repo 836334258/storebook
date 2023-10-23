@@ -35,7 +35,7 @@ export interface TimeSelectProps extends BasicComponent {
   onDateChange?: (date: DateType, value: DateType[]) => void
   onTimeChange?: (time: TimeType, value: DateType[]) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   multiple: false,

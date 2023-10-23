@@ -17,7 +17,7 @@ import {
 import { BasicComponent } from '@/utils/typings'
 
 export type DialogProps = BasicDialogProps & BasicComponent
-const defaultProps = {
+export const defaultProps = {
   title: '',
   content: '',
   footer: '',

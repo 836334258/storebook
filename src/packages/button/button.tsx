@@ -32,7 +32,7 @@ export interface ButtonProps extends BasicComponent {
 
 const prefixCls = 'nut-button'
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   color: '',
   type: 'default',

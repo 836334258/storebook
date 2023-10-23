@@ -19,7 +19,7 @@ export interface MenuProps extends BasicComponent {
   onClose: CallBackFunction
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   activeColor: '',
   closeOnOverlayClick: true,

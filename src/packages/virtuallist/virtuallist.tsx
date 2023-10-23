@@ -27,7 +27,7 @@ export interface VirtualListProps extends BasicComponent {
   onScroll: () => void
   key: string
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   list: [] as Array<Data>,
   itemHeight: 66,

@@ -28,7 +28,7 @@ export interface SwiperProps extends Omit<TaroSwiperProps, 'ref'> {
   onChange: (e: any) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   direction: 'horizontal',
   indicator: false,
   autoPlay: false,

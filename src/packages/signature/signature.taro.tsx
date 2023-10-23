@@ -28,7 +28,7 @@ export interface SignatureProps extends BasicComponent {
   onConfirm?: (dataurl: string) => void
   onClear?: () => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   canvasId: 'spcanvas',
   type: 'png',

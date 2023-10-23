@@ -25,7 +25,7 @@ export interface InfiniteLoadingProps extends BasicComponent {
   onScroll: (param: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   hasMore: true,
   threshold: 40,

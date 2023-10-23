@@ -10,7 +10,7 @@ export interface StepsProps extends BasicComponent {
   onStepClick: (index: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   value: 0,
   direction: 'horizontal',

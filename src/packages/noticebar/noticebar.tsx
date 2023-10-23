@@ -32,7 +32,7 @@ export interface NoticeBarProps extends BasicComponent {
   onItemClick?: (event: any, value: any) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   direction: 'horizontal',
   list: [],

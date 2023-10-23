@@ -24,7 +24,7 @@ export interface SignatureProps extends BasicComponent {
   onClear?: () => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'png',
   lineWidth: 2,

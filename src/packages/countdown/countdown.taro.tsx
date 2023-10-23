@@ -26,7 +26,7 @@ export interface CountDownProps extends BasicComponent {
   children: ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   paused: false,
   startTime: Date.now(),

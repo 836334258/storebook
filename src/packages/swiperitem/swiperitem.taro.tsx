@@ -6,7 +6,7 @@ export interface SwiperItemProps extends BasicComponent {
   skipHiddenItemLayout?: boolean
 }
 
-const defaultProps = {
+export const defaultProps = {
   itemId: '',
   skipHiddenItemLayout: false,
 } as SwiperItemProps

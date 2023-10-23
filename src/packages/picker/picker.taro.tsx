@@ -51,7 +51,7 @@ export interface PickerProps extends Omit<BasicComponent, 'children'> {
   children?: any
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   title: '',

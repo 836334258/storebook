@@ -10,7 +10,7 @@ export interface PriceProps extends BasicComponent {
   size: string
   line: boolean
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   price: 0,
   symbol: '&yen;',

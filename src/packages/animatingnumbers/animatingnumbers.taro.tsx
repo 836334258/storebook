@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { CountUp } from './countup.taro'
 
 export interface AnimatingNumbersProps {}
-const defaultProps = {} as AnimatingNumbersProps
+export const defaultProps = {} as AnimatingNumbersProps
 
 export class AnimatingNumbers extends Component<
   AnimatingNumbersProps,

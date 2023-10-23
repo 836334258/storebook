@@ -29,7 +29,7 @@ export interface FormItemProps extends BasicComponent, BaseFormField {
   validateTrigger: string | string[]
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   required: false,
   name: '',

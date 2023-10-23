@@ -16,7 +16,7 @@ export interface RowProps extends BasicComponent {
 }
 const classPrefix = 'nut-row'
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: '',
   justify: 'start',

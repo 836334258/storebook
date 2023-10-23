@@ -37,7 +37,7 @@ export interface MenuItemProps extends BasicComponent {
   children: React.ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   columns: 1,
   direction: 'down',

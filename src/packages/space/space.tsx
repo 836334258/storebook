@@ -17,7 +17,7 @@ export interface SpaceProps extends BasicComponent {
     | 'stretch'
   wrap: boolean
 }
-const defaultProps = {
+export const defaultProps = {
   direction: 'horizontal',
 } as SpaceProps
 

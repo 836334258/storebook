@@ -41,7 +41,7 @@ export interface InputProps extends BasicComponent {
   onClick?: (value: MouseEvent<HTMLDivElement>) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'text',
   name: '',

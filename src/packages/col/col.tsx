@@ -17,7 +17,7 @@ export interface ColProps extends BasicComponent {
   gutter: string | number
   onClick: (e: MouseEvent<HTMLDivElement>, type: ColEventType) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   span: '24',
   offset: '0',

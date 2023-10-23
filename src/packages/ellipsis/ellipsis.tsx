@@ -21,7 +21,7 @@ export interface EllipsisProps extends BasicComponent {
   onChange: (type: string) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   content: '',
   direction: 'end',

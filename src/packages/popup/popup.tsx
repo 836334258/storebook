@@ -39,7 +39,7 @@ export interface PopupProps extends OverlayProps {
   onCloseIconClick: (e: MouseEvent) => boolean | void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   position: 'center',
   transition: '',

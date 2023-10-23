@@ -31,7 +31,7 @@ export interface TagProps extends BasicComponent {
   onClose: (e?: any) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'default',
   background: '',

@@ -14,7 +14,7 @@ export interface AvatarGroupProps extends BasicComponent {
   gap: string
   level: 'left' | 'right'
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   maxContent: '',
   max: '',

@@ -19,7 +19,7 @@ export interface ColProps extends BasicComponent {
   onClick: (e: MouseEvent<HTMLDivElement>, type: ColEventType) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   span: '24',
   offset: '0',

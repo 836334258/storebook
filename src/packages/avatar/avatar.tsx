@@ -28,7 +28,7 @@ export interface AvatarProps extends BasicComponent {
 
 export type AvatarShape = 'round' | 'square'
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   size: '',
   shape: 'round',

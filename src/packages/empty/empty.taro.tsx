@@ -20,7 +20,7 @@ export interface EmptyProps extends BasicComponent {
   status: 'empty' | 'error' | 'network'
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   description: '',
   imageSize: '',

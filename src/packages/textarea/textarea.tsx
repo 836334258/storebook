@@ -19,7 +19,7 @@ export interface TextAreaProps extends BasicComponent {
   onBlur: (event: FocusEvent<HTMLTextAreaElement>) => void
   onFocus: (event: FocusEvent<HTMLTextAreaElement>) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   defaultValue: '',
   showCount: false,

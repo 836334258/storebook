@@ -24,7 +24,7 @@ export interface ElevatorProps extends BasicComponent {
   onItemClick: (key: string, item: ElevatorData) => void
   onIndexClick: (key: string) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   height: '200px',
   floorKey: 'title',

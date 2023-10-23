@@ -16,7 +16,7 @@ export interface BarrageProps extends BasicComponent {
   rows: number
   gapY: number
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   list: [],
   interval: 500,

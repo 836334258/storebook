@@ -36,7 +36,7 @@ export interface InputNumberProps extends BasicComponent {
   ) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   disabled: false,
   min: 1,

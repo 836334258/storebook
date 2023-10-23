@@ -15,7 +15,7 @@ export interface CollapseProps extends BasicComponent {
   rotate: number
   onChange: (activeName: keyType, name: string, isOpen: boolean) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   defaultActiveName: [] as keyType,
   accordion: false,

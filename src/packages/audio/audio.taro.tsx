@@ -27,7 +27,7 @@ export interface AudioProps extends BasicComponent {
   onCanPlay?: (ctx: InnerAudioContext) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   className: '',
   url: '',

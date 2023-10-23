@@ -25,7 +25,7 @@ export interface CheckboxProps extends BasicComponent {
   onChange: (value: boolean) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   disabled: false,
   labelPosition: 'right',

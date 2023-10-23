@@ -14,7 +14,7 @@ import {
 import { ComponentDefaults } from '@/utils/typings'
 
 export type DialogProps = BasicDialogProps
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   confirmText: '',
   cancelText: '',

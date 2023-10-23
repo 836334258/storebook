@@ -36,7 +36,7 @@ interface StickyRect {
   height: number
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   position: 'top',
   zIndex: 900,

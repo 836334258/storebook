@@ -27,7 +27,7 @@ export interface ImageProps extends BasicComponent {
   onError: () => void
 }
 
-const defaultProps: Partial<ImageProps> = {
+export const defaultProps: Partial<ImageProps> = {
   ...ComponentDefaults,
   fit: 'fill',
   position: 'center',
