@@ -31,7 +31,7 @@ export interface TrendArrowProps extends BasicComponent {
   dropIcon: React.ReactNode
 }
 
-export export const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   value: 0,
   digits: 2,
@@ -100,7 +100,7 @@ export const TrendArrow: FunctionComponent<
     const resultRate = `${
       // eslint-disable-next-line no-nested-ternary
       symbol && value !== 0 ? (rateTrend.current ? '+' : '-') : ''
-    }${myFixed(Number(absRate), digits)}%`
+      }${myFixed(Number(absRate), digits)}%`
 
     return resultRate
   })()
