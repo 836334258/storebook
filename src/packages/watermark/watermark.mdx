@@ -1,13 +1,25 @@
-import { Canvas, Meta } from '@storybook/blocks';
+import { Canvas, Meta, ArgTypes } from '@storybook/blocks';
 
 import * as Watermark from './Watermark.stories';
 
 <Meta of={Watermark} />
 
-# Checkbox
+# Watermark 水印
 
-A checkbox is a square box that can be activated or deactivated when ticked. 
+页面上添加特定的文字或图案，可用于防止信息盗用。
 
-Use checkboxes to select one or more options from a list of choices.
+## Props
+
+<ArgTypes of={Watermark} />
+
+## 文字水印
 
 <Canvas of={Watermark.Text} />
+
+## 图片水印
+
+<Canvas of={Watermark.Pic} />
+
+## 局部水印
+
+<Canvas of={Watermark.Local} />
