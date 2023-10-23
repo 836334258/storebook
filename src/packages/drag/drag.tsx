@@ -13,7 +13,7 @@ export interface DragProps extends BasicComponent {
     bottom: number
   }
 }
-export export const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   attract: false,
   direction: undefined,
@@ -28,10 +28,10 @@ export const Drag: FunctionComponent<
   Partial<DragProps> & React.HTMLAttributes<HTMLDivElement>
 > = (props) => {
   const { attract, direction, boundary, children, className, style, ...reset } =
-    {
-      ...defaultProps,
-      ...props,
-    }
+  {
+    ...defaultProps,
+    ...props,
+  }
   const classPrefix = 'nut-drag'
   const [boundaryState, setBoundaryState] = useState(boundary)
   const myDrag = useRef<HTMLDivElement>(null)

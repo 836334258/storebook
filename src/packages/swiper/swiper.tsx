@@ -35,7 +35,7 @@ export interface SwiperProps extends BasicComponent {
   onChange?: (current: number) => void
 }
 
-export export const defaultProps = {
+export const defaultProps = {
   width: typeof window === 'object' ? window.innerWidth : 375,
   height: 0,
   duration: 500,
@@ -338,18 +338,14 @@ export const Swiper = React.forwardRef<
         moveOffset +
         (active === childCount - 1 && !props.loop ? -val / 2 : val / 2)
     }
-    target.style.transitionDuration = `${
-      swiperRef.current.moving ? 0 : props.duration
-    }ms`
-    target.style[isVertical ? 'height' : 'width'] = `${
-      Number(size) * childCount
-    }px`
-    target.style[isVertical ? 'width' : 'height'] = `${
-      isVertical ? width : height
-    }px`
-    target.style.transform = `translate3D${
-      !isVertical ? `(${_offset}px,0,0)` : `(0,${_offset}px,0)`
-    }`
+    target.style.transitionDuration = `${swiperRef.current.moving ? 0 : props.duration
+      }ms`
+    target.style[isVertical ? 'height' : 'width'] = `${Number(size) * childCount
+      }px`
+    target.style[isVertical ? 'width' : 'height'] = `${isVertical ? width : height
+      }px`
+    target.style.transform = `translate3D${!isVertical ? `(${_offset}px,0,0)` : `(0,${_offset}px,0)`
+      }`
   }
 
   const onTouchStart = (e: TouchEvent) => {
@@ -473,9 +469,8 @@ export const Swiper = React.forwardRef<
     }
     const offset = childOffset[index]
     if (offset) {
-      style.transform = `translate3D${
-        direction === 'horizontal' ? `(${offset}px,0,0)` : `(0,${offset}px,0)`
-      }`
+      style.transform = `translate3D${direction === 'horizontal' ? `(${offset}px,0,0)` : `(0,${offset}px,0)`
+        }`
     }
     return style
   }

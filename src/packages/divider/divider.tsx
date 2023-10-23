@@ -9,7 +9,7 @@ export interface DividerProps extends BasicComponent {
   contentPosition: ContentPositionType
   direction?: DirectionType
 }
-export export const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   contentPosition: 'center',
   direction: 'horizontal',
@@ -26,16 +26,16 @@ export const Divider: FunctionComponent<
   const classes =
     direction === 'horizontal'
       ? classNames({
-          [`${classPrefix}`]: true,
-          [`${classPrefix}__center`]: children,
-          [`${classPrefix}__left`]: contentPosition === 'left',
-          [`${classPrefix}__right`]: contentPosition === 'right',
-          [`${classPrefix}__hairline`]: true,
-        })
+        [`${classPrefix}`]: true,
+        [`${classPrefix}__center`]: children,
+        [`${classPrefix}__left`]: contentPosition === 'left',
+        [`${classPrefix}__right`]: contentPosition === 'right',
+        [`${classPrefix}__hairline`]: true,
+      })
       : classNames({
-          [`${classPrefix}`]: true,
-          [`${classPrefix}__vertical`]: direction === 'vertical',
-        })
+        [`${classPrefix}`]: true,
+        [`${classPrefix}__vertical`]: direction === 'vertical',
+      })
   return (
     <div className={`${classes} ${className || ''}`} style={style} {...rest}>
       {children}
