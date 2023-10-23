@@ -11,7 +11,7 @@ export interface SwitchProps extends BasicComponent {
   inactiveText: string
   onChange: (val: boolean, event: React.MouseEvent) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   disabled: false,
   activeText: '',

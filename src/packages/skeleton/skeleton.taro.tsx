@@ -13,7 +13,7 @@ export interface SkeletonProps extends BasicComponent {
   visible: boolean
   avatarShape: avatarShape
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   rows: 1,
   animated: false,

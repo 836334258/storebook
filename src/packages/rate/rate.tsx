@@ -22,7 +22,7 @@ export interface RateProps extends BasicComponent {
   onChange: (value: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   count: 5,
   min: 0,

@@ -44,7 +44,7 @@ export interface AddressProps extends CascaderProps {
   onExistSelect?: (data: AddressList) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   defaultValue: [],
   type: 'custom',

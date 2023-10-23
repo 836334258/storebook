@@ -16,7 +16,7 @@ export interface CircleProgressProps extends BasicComponent {
   background?: string
   clockwise?: boolean
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   strokeWidth: 5,
   radius: 50,

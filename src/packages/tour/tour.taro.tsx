@@ -35,7 +35,7 @@ export interface TourProps extends BasicComponent {
   onClose: (e: MouseEvent<HTMLDivElement>) => void
   onChange: (value: number) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   type: 'step',

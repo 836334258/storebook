@@ -33,7 +33,7 @@ export interface ToastProps extends BasicComponent {
   onClose: () => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   id: '',
   icon: null,

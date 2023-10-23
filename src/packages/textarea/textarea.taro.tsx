@@ -22,7 +22,7 @@ export interface TextAreaProps
   onBlur: (event: Event) => void
   onFocus: (event: Event) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   defaultValue: '',
   showCount: false,

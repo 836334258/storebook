@@ -46,7 +46,7 @@ export interface InputProps extends BasicComponent {
   onClick?: (e: ITouchEvent) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'text',
   name: '',

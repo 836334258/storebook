@@ -13,7 +13,7 @@ export interface ActionSheetProps extends PopupProps {
   onCancel: () => void
   onSelect: (item: ItemType<string | boolean>, index: number) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   description: '',

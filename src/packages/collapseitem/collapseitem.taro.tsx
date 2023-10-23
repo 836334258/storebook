@@ -21,7 +21,7 @@ export interface CollapseItemProps extends BasicComponent {
   extra: ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   title: null,
   name: '',

@@ -24,7 +24,7 @@ export interface FixedNavProps extends BasicComponent {
   content: React.ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   activeText: '',
   inactiveText: '',

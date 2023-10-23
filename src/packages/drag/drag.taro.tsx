@@ -12,7 +12,7 @@ export interface DragProps extends BasicComponent {
     bottom: number
   }
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   attract: false,
   direction: undefined,

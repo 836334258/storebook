@@ -18,7 +18,7 @@ export interface GridProps {
   onClick: (item: GridItemProps, index: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   columns: 4,
   gap: 0,
   center: true,

@@ -24,7 +24,7 @@ const loadingMap = {
   spinner: IconLoading,
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   // 对比一下,个人感觉还是Loading1比较好看一些,所以用它作为了默认的loading图标
   type: 'circular',

@@ -19,7 +19,7 @@ export interface VideoProps extends BasicComponent {
   onPause: (element: HTMLVideoElement) => void
   onPlayEnd: (element: HTMLVideoElement) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   source: {
     type: {},

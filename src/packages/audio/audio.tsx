@@ -23,7 +23,7 @@ export interface AudioProps extends BasicComponent {
   onCanPlay: (e: SyntheticEvent<HTMLAudioElement>) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   src: '',
   muted: false,

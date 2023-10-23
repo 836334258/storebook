@@ -14,7 +14,7 @@ export interface TimeDetailProps extends BasicComponent {
   optionKey: OptionKeyType
   onSelect: (time: TimeType) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   activeDate: '',
   activeTime: [] as DateType[],

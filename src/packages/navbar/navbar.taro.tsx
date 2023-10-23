@@ -15,7 +15,7 @@ export interface NavBarProps extends BasicComponent {
   children?: React.ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   left: '',
   right: '',

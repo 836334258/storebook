@@ -35,7 +35,7 @@ export interface TimeSelectProps extends BasicComponent {
   onDateChange?: (date: DateType, value: DateType[]) => void
   onTimeChange?: (time: TimeType, value: DateType[]) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   multiple: false,
@@ -47,6 +47,10 @@ const defaultProps = {
     childrenKey: 'children',
   },
 } as TimeSelectProps
+
+/**
+ * 用于配送时间选择
+ */
 export const TimeSelect: FunctionComponent<Partial<TimeSelectProps>> = (
   props
 ) => {

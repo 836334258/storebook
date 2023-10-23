@@ -15,7 +15,7 @@ export interface SideNavBarProps
   onClose: () => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   position: 'left',
   width: '80%',

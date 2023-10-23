@@ -15,7 +15,7 @@ export interface TrendArrowProps extends BasicComponent {
   riseIcon: React.ReactNode
   dropIcon: React.ReactNode
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   value: 0,
   digits: 2,

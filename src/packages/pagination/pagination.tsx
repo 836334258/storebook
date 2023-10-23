@@ -18,7 +18,7 @@ export interface PaginationProps extends BasicComponent {
   onChange: (currPage: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   defaultValue: 1,
   mode: 'multi',

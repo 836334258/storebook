@@ -24,7 +24,7 @@ export type SubSideNavBarProps = {
     isShow: boolean
   }) => void
 }
-const defaultProps = {
+export const defaultProps = {
   open: true,
 } as SubSideNavBarProps
 export const SubSideNavBar: FunctionComponent<SubSideNavBarProps> = (props) => {

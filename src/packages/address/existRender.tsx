@@ -13,7 +13,7 @@ export interface ExistRenderProps {
   onSwitch?: (cal: { type: string }) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   type: 'custom',
   existList: [],
   defaultIcon: null,

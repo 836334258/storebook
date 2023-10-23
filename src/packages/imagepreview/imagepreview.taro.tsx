@@ -47,7 +47,7 @@ export interface ImagePreviewProps extends BasicComponent {
   onClose: () => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   images: [],
   videos: [],

@@ -6,7 +6,7 @@ export interface IndicatorProps {
   current: number
   direction: string
 }
-const defaultProps = {
+export const defaultProps = {
   total: 3,
   current: 0,
   direction: 'horizontal',

@@ -30,7 +30,7 @@ export interface TabsProps extends BasicComponent {
   children?: React.ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   tabStyle: {},
   activeColor: '',

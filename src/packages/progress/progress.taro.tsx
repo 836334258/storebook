@@ -12,7 +12,7 @@ export interface ProgressProps extends BasicComponent {
   delay: number
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   percent: 0,
   showText: false,

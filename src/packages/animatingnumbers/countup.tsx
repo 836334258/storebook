@@ -14,7 +14,7 @@ export interface CountUpProps extends BasicComponent {
   duration: number
   thousands: boolean
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   length: 0,
   value: '',

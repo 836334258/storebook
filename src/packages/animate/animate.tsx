@@ -10,7 +10,7 @@ export interface AnimateProps extends BasicComponent {
   loop: boolean
   onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'shake',
   action: 'initial',

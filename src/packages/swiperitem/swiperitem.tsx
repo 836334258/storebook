@@ -13,7 +13,7 @@ interface Style {
   transform?: string
 }
 
-const defaultProps = {
+export const defaultProps = {
   direction: 'horizontal',
 } as SwiperItemProps
 

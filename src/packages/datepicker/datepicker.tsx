@@ -37,7 +37,7 @@ export interface DatePickerProps extends BasicComponent {
   ) => void
 }
 const currentYear = new Date().getFullYear()
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   title: '',

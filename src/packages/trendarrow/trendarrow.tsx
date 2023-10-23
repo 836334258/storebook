@@ -3,19 +3,35 @@ import { TriangleDown, TriangleUp } from '@nutui/icons-react'
 import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 
 export interface TrendArrowProps extends BasicComponent {
+  /**  
+  数值，大于0时箭头向上，小于0时箭头向下 
+  */
   value: number
+  /** 
+    小数位精度
+  */
   digits: number
+  /** 是否显示加减号	 */
   symbol: boolean
+  /** 是否显示 0	 */
   zero: boolean
+  /** 是否在数字左侧显示箭头	 */
   left: boolean
+  /** 文字颜色是否与箭头同步	 */
   sync: boolean
+  /** 文字颜色	 */
   color: string
+  /** 向上箭头颜色	 */
   riseColor: string
+  /** 向下箭头颜色	 */
   dropColor: string
+  /** 自定义向上箭头icon	 */
   riseIcon: React.ReactNode
+  /** 自定义向下箭头icon	 */
   dropIcon: React.ReactNode
 }
-const defaultProps = {
+
+export export const defaultProps = {
   ...ComponentDefaults,
   value: 0,
   digits: 2,
@@ -30,6 +46,9 @@ const defaultProps = {
   dropIcon: null,
 } as TrendArrowProps
 
+/**
+ * 带有箭头指示的百分比数字,用以展示指标趋势
+ */
 export const TrendArrow: FunctionComponent<
   Partial<TrendArrowProps> & React.HTMLAttributes<HTMLDivElement>
 > = (props) => {

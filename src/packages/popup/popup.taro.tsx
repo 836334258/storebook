@@ -42,7 +42,7 @@ export interface PopupProps extends OverlayProps {
   onCloseIconClick: (e: ITouchEvent) => boolean | void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   position: 'center',
   transition: '',

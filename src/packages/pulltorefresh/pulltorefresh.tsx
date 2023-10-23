@@ -29,7 +29,7 @@ export interface PullToRefreshProps extends BasicComponent {
   renderText: (status: PullStatus) => ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   pullingText: '',
   canReleaseText: '',

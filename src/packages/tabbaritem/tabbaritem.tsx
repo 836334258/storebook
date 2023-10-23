@@ -18,7 +18,7 @@ export interface TabbarItemProps extends BasicComponent {
   handleClick: (idx: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   title: '',
   icon: null,

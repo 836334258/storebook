@@ -63,7 +63,7 @@ export interface CascaderProps
   onPathChange: (value: CascaderValue, params: any) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   activeColor: '',
   activeIcon: 'checklist',

@@ -11,7 +11,7 @@ export interface CellGroupProps extends BasicComponent {
   divider: boolean
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   title: '',
   description: '',

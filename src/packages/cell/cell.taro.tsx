@@ -13,7 +13,7 @@ export interface CellProps extends BasicComponent {
   onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   title: null,
   description: null,

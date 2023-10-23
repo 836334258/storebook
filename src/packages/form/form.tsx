@@ -18,7 +18,7 @@ export interface FormProps extends BasicComponent {
   onFinishFailed: (values: any, errorFields: any) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   labelPosition: 'right',
   starPosition: 'left',

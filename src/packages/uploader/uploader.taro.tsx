@@ -118,7 +118,7 @@ export interface UploaderProps extends BasicComponent {
   onFileItemClick?: (file: FileItem) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   url: '',
   maxCount: 1,

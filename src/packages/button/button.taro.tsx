@@ -39,7 +39,7 @@ export interface ButtonProps
 
 const prefixCls = 'nut-button'
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   color: '',
   type: 'default',

@@ -52,7 +52,7 @@ export interface PopoverProps extends PopupProps {
   onSelect: (item: List, index: number) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   list: [],
   location: 'bottom',

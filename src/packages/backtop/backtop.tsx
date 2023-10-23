@@ -14,7 +14,7 @@ export interface BackTopProps extends BasicComponent {
   onClick?: (event: MouseEvent<HTMLDivElement>) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   target: '',
   threshold: 200,

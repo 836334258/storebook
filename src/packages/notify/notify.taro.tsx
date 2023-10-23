@@ -21,7 +21,7 @@ export interface NotifyProps extends BasicComponent {
   onClick: () => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   id: '',
   duration: 3000, // 时长

@@ -17,7 +17,7 @@ export interface NumberKeyboardProps extends PopupProps {
   onClose: () => void
   onConfirm?: () => void
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   visible: false,
   type: 'default',

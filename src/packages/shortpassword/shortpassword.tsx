@@ -27,7 +27,7 @@ export interface ShortPasswordProps extends PopupProps {
   onComplete: (value: string) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   value: '',
   visible: false,

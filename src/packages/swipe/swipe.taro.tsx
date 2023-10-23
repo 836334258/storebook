@@ -67,7 +67,7 @@ export interface SwipeProps extends BasicComponent {
   onTouchMove?: (event: BaseEventOrig<HTMLDivElement>) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   name: '',
 } as SwipeProps

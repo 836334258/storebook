@@ -20,7 +20,7 @@ export interface StickyProps extends BasicComponent {
   onChange: (val: boolean) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   position: 'top',
   threshold: 0,

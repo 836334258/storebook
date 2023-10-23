@@ -17,7 +17,7 @@ export interface CardProps extends BasicComponent {
   priceTag: React.ReactNode
   extra: React.ReactNode
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   src: '',
   title: '',

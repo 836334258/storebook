@@ -11,7 +11,7 @@ export interface BadgeProps extends BasicComponent {
   right: string | number
   color: string
 }
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   value: '',
   dot: false,

@@ -19,7 +19,7 @@ export interface ImageProps extends Omit<TImageProps, 'style'> {
   loading: boolean | ReactNode
 }
 
-const defaultProps = {
+export const defaultProps = {
   src: '',
   error: true,
   loading: true,

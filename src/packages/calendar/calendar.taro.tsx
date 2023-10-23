@@ -38,7 +38,7 @@ export interface CalendarProps {
   onPageChange?: (param: string) => void
 }
 
-const defaultProps = {
+export const defaultProps = {
   ...ComponentDefaults,
   type: 'single',
   autoBackfill: false,
