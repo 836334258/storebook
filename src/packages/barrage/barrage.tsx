@@ -9,11 +9,17 @@ import classNames from 'classnames'
 import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 
 export interface BarrageProps extends BasicComponent {
+  /**弹幕列表数据   */
   list: Array<string>
+  /**可视区域内每个弹幕出现的时间间隔 */
   interval: number
+  /**是否循环播放 */
   loop: boolean
+  /**每个弹幕的滚动时间 */
   duration: number
+  /**弹幕行数，分几行展示 */
   rows: number
+  /**弹幕垂直距离 */
   gapY: number
 }
 export const defaultProps = {

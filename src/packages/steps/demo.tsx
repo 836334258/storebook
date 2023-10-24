@@ -70,7 +70,7 @@ const customTheme3 = {
   nutuiStepsFinishLineBackground: `black`,
 }
 
-const StepsDemo = () => {
+export const StepsDemo = () => {
   const [translated] = useTranslate<T>({
     'zh-CN': {
       '74fc5d8a': '基础用法',

@@ -20,34 +20,59 @@ export type SwiperRef = {
 }
 
 export interface SwiperProps extends BasicComponent {
+  /**轮播卡片的宽度 */
   width: number | string
+  /**轮播卡片的高度	 */
   height: number | string
+  /** 动画时长（单位是ms）	*/
   duration: number | string
+  /**初始化索引值	 */
   defaultValue: number | string
+  /**自动轮播时长，0表示不会自动轮播	 */
   autoPlay: number | string
+  /**轮播方向	 */
   direction: 'horizontal' | 'vertical'
+  /**分页指示器是否展示，可传入自定义的 HTML 结构	 */
   indicator: ReactNode
+  /**是否循环轮播	 */
   loop: boolean
+  /**是否可触摸滑动	 */
   touchable: boolean
+  /**滑动过程中是否禁用默认事件	 */
   preventDefault: boolean
+  /**滑动过程中是否禁止冒泡	 */
   stopPropagation: boolean
+  /**是否居中展示，必须传对应的width 和 height	 */
   center: boolean
+  /**class */
   onChange?: (current: number) => void
 }
 
 export const defaultProps = {
   width: typeof window === 'object' ? window.innerWidth : 375,
+
   height: 0,
+
   duration: 500,
+
   defaultValue: 0,
+
   autoPlay: 0,
+
   direction: 'horizontal',
+
   indicator: false,
+
   loop: false,
+
   touchable: true,
+
   preventDefault: true,
+
   stopPropagation: true,
+
   center: false,
+
   className: '',
 } as SwiperProps
 
@@ -338,14 +363,18 @@ export const Swiper = React.forwardRef<
         moveOffset +
         (active === childCount - 1 && !props.loop ? -val / 2 : val / 2)
     }
-    target.style.transitionDuration = `${swiperRef.current.moving ? 0 : props.duration
-      }ms`
-    target.style[isVertical ? 'height' : 'width'] = `${Number(size) * childCount
-      }px`
-    target.style[isVertical ? 'width' : 'height'] = `${isVertical ? width : height
-      }px`
-    target.style.transform = `translate3D${!isVertical ? `(${_offset}px,0,0)` : `(0,${_offset}px,0)`
-      }`
+    target.style.transitionDuration = `${
+      swiperRef.current.moving ? 0 : props.duration
+    }ms`
+    target.style[isVertical ? 'height' : 'width'] = `${
+      Number(size) * childCount
+    }px`
+    target.style[isVertical ? 'width' : 'height'] = `${
+      isVertical ? width : height
+    }px`
+    target.style.transform = `translate3D${
+      !isVertical ? `(${_offset}px,0,0)` : `(0,${_offset}px,0)`
+    }`
   }
 
   const onTouchStart = (e: TouchEvent) => {
@@ -469,8 +498,9 @@ export const Swiper = React.forwardRef<
     }
     const offset = childOffset[index]
     if (offset) {
-      style.transform = `translate3D${direction === 'horizontal' ? `(${offset}px,0,0)` : `(0,${offset}px,0)`
-        }`
+      style.transform = `translate3D${
+        direction === 'horizontal' ? `(${offset}px,0,0)` : `(0,${offset}px,0)`
+      }`
     }
     return style
   }

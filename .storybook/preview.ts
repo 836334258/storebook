@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react'
 import '@nutui/nutui-react/dist/style.css'
+import './index.css'
 
 const preview: Preview = {
   parameters: {

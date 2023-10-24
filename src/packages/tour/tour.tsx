@@ -19,21 +19,37 @@ export interface ListOptions {
 export type TourType = 'step' | 'tile'
 
 export interface TourProps extends BasicComponent {
+  /**是否展示引导弹出层 */
   visible: boolean
+  /**引导类型 */
   type: TourType
+  /**弹出层位置,同 Popopver 的location 属性 */
   location: PopoverLocation | string
+  /** 是否显示镂空遮罩	*/
   mask: boolean
+  /**镂空遮罩层宽度 */
   maskWidth: number | string
+  /**镂空遮罩层高度	 */
   maskHeight: number | string
+  /**镂空遮罩相对于目标元素的偏移量	 */
   offset: number[]
+  /**引导步骤内容	 */
   list: ListOptions[]
+  /** 是否展示标题栏	*/
   title: ReactNode
+  /**下一步按钮文案	 */
   next: ReactNode
+  /**上一步按钮文案	 */
   prev: ReactNode
+  /**完成按钮文案	 */
   complete: ReactNode
+  /**是否展示上一步按钮	 */
   showPrev: boolean
+  /**是否在点击镂空遮罩层后关闭,同 Popopver 的closeOnClickOverlay 属性 */
   closeOnOverlayClick: boolean
+  /**气泡层关闭时触发	 */
   onClose: (e: MouseEvent<HTMLDivElement>) => void
+  /** 切换步骤时触发	*/
   onChange: (value: number) => void
 }
 export const defaultProps = {

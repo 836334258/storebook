@@ -20,15 +20,25 @@ export type TagType =
   | 'danger'
 
 export interface TagProps extends BasicComponent {
+  /**标签类型 */
   type: TagType
+  /**标签颜色	 */
   background: string
+  /**文本颜色，优先级高于color属性 */
   color: string
+  /**是否为空心样式 */
   plain: boolean
+  /**是否为圆角样式 */
   round: boolean
+  /**是否为标记样式 */
   mark: boolean
+  /**是否为可关闭标签 */
   closeable: boolean
+  /**关闭按钮 */
   closeIcon: ReactNode
+  /**点击事件 */
   onClick: (e: MouseEvent<HTMLDivElement>) => void
+  /**关闭事件 */
   onClose: (e?: any) => void
 }
 

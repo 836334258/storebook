@@ -9,12 +9,19 @@ export type TableProps = BasicTableProps
 
 export const defaultProps = {
   ...ComponentDefaults,
+  /**表头数据	 */
   columns: [],
+  /**表格数据	 */
   data: [],
+  /**是否显示边框	 */
   bordered: true,
+  /**条纹是否明暗交替	 */
   striped: false,
+  /**自定义无数据	 */
   noData: '',
+  /**排序 icon	 */
   sorterIcon: null,
+  /**是否显示表头	 */
   showHeader: true,
 } as TableProps
 export const Table: FunctionComponent<
