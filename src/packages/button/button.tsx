@@ -16,14 +16,23 @@ export type ButtonShape = 'square' | 'round'
 export type ButtonFill = 'solid' | 'outline' | 'none'
 
 export interface ButtonProps extends BasicComponent {
+  /**按钮颜色，支持传入 linear-gradient 渐变色 */
   color: string
+  /**按钮的形状	 */
   shape: ButtonShape
+  /**按钮的样式 */
   type: ButtonType
+  /**按钮的尺寸	 */
   size: ButtonSize
+  /**填充模式	 */
   fill: ButtonFill
+  /**是否为块级元素	 */
   block: boolean
+  /**按钮loading状态	 */
   loading: boolean
+  /**是否禁用按钮	 */
   disabled: boolean
+  /**按钮图标	 */
   icon: React.ReactNode
   id: string
   nativeType: 'submit' | 'reset' | 'button'
@@ -50,22 +59,21 @@ export const Button = React.forwardRef<HTMLButtonElement, Partial<ButtonProps>>(
   (props, ref) => {
     const {
       color,
-      shape,
-      fill,
-      loading,
-      disabled,
-      type,
-      size,
-      block,
-      icon,
+      shape = 'round',
+      fill = 'solid',
+      loading = false,
+      disabled = false,
+      type = 'default',
+      size = 'normal',
+      block = false,
+      icon = null,
       children,
       onClick,
       className,
       style,
-      nativeType,
+      nativeType = 'button',
       ...rest
     } = {
-      ...defaultProps,
       ...props,
     }
     const getStyle = useCallback(() => {

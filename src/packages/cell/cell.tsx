@@ -5,11 +5,17 @@ import CellGroup from '@/packages/cellgroup'
 import CellGroupContext from '@/packages/cellgroup/context'
 
 export interface CellProps extends BasicComponent {
+  /**分组标题	 */
   title: ReactNode
+  /**描述	 */
   description: ReactNode
+  /**右侧描述	 */
   extra: ReactNode
+  /**radius */
   radius: string | number
+  /**纵轴方向上的对齐方式，可选值为：flex-start、center、flex-end */
   align: string
+  /**点击事件	 */
   onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
@@ -27,23 +33,19 @@ const classPrefix = 'nut-cell'
 
 export const Cell: FunctionComponent<
   Partial<CellProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>
-> & { Group: typeof CellGroup } = (props) => {
+> & { Group: typeof CellGroup } = ({
+  children,
+  onClick,
+  title = null,
+  description = null,
+  extra = null,
+  radius = '6px',
+  align = 'flex-start',
+  className,
+  style,
+  ...rest
+}) => {
   const ctx = useContext(CellGroupContext)
-  const {
-    children,
-    onClick,
-    title,
-    description,
-    extra,
-    radius,
-    align,
-    className,
-    style,
-    ...rest
-  } = {
-    ...defaultProps,
-    ...props,
-  }
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     onClick(event)
