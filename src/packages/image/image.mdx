@@ -1,0 +1,30 @@
+import { Canvas, Meta, ArgTypes } from '@storybook/blocks';
+
+import * as Image from './Image.stories';
+
+<Meta of={Image} />
+
+# Image 图片
+
+增强版的 img 标签，提供多种图片填充模式，支持图片加载中提示、加载失败提示。
+
+## Props
+
+<ArgTypes of={Image} />
+
+## 基础用法
+
+<Canvas of={Image.Demo1} />
+
+## 填充模式
+
+<Canvas of={Image.Demo2} />
+
+## 图片位置
+
+<Canvas of={Image.Demo3} />
+
+## 圆形图片
+
+<Canvas of={Image.Demo4} />
+

@@ -12,18 +12,31 @@ import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 import { pxCheck } from '@/utils/px-check'
 
 export interface ImageProps extends BasicComponent {
+  /** 图片链接 */
   src: string
+  /** 图片填充模式，等同于原生的 object-fit 属性 */
   fit: ImageFit
+  /** 图片位置，等同于原生的 object-position 属性 */
   position: ImagePosition
+  /** 替代文本 */
   alt: string
+  /** 宽度，默认单位px */
   width: string
+  /** 高度，默认单位px */
   height: string
+  /** 圆角大小 */
   radius: string | number
+  /** 是否展示图片加载失败 */
   error: boolean | ReactNode
+  /** 是否展示加载中图片 */
   loading: boolean | ReactNode
+  /** 是否为懒加载图片 */
   lazy: boolean
+  /**  	点击图片时触发 */
   onClick: (e: MouseEvent) => void
+  /** 图片加载完后触发 */
   onLoad: () => void
+  /** 图片加载失败后触发 */
   onError: () => void
 }
 
@@ -64,15 +77,15 @@ export const Image: FunctionComponent<
     className,
     style,
     src,
-    fit,
-    position,
+    fit = 'fill',
+    position = 'center',
     alt,
-    width,
+    width = 'center',
     height,
     radius,
-    error,
-    loading,
-    lazy,
+    error = true,
+    loading = true,
+    lazy = false,
     onClick,
     onLoad,
     onError,
