@@ -1,6 +1,6 @@
 .docs-story>div>div{
-  height: 300px !important;
-  width: 500px;
-  transform: unset !important;
+  min-height: 100px !important;
+  width: 100%;
+  /* transform: unset !important; */
   position: relative;
 }

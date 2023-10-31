@@ -6,7 +6,9 @@ import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 export type ContentPositionType = 'left' | 'center' | 'right'
 export type DirectionType = 'horizontal' | 'vertical'
 export interface DividerProps extends BasicComponent {
+  /**内容位置	 */
   contentPosition: ContentPositionType
+  /**水平还是垂直类型	 */
   direction?: DirectionType
 }
 export const defaultProps = {
@@ -26,16 +28,16 @@ export const Divider: FunctionComponent<
   const classes =
     direction === 'horizontal'
       ? classNames({
-        [`${classPrefix}`]: true,
-        [`${classPrefix}__center`]: children,
-        [`${classPrefix}__left`]: contentPosition === 'left',
-        [`${classPrefix}__right`]: contentPosition === 'right',
-        [`${classPrefix}__hairline`]: true,
-      })
+          [`${classPrefix}`]: true,
+          [`${classPrefix}__center`]: children,
+          [`${classPrefix}__left`]: contentPosition === 'left',
+          [`${classPrefix}__right`]: contentPosition === 'right',
+          [`${classPrefix}__hairline`]: true,
+        })
       : classNames({
-        [`${classPrefix}`]: true,
-        [`${classPrefix}__vertical`]: direction === 'vertical',
-      })
+          [`${classPrefix}`]: true,
+          [`${classPrefix}__vertical`]: direction === 'vertical',
+        })
   return (
     <div className={`${classes} ${className || ''}`} style={style} {...rest}>
       {children}

@@ -13,12 +13,19 @@ import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 
 export interface OverlayProps extends BasicComponent {
   zIndex: number
+  /**动画时长，单位毫秒 */
   duration: number
+  /**是否点击遮罩关闭 */
   closeOnOverlayClick: boolean
+  /**当前组件是否显示 */
   visible: boolean
+  /**背景是否锁定 */
   lockScroll: boolean
+  /**点击时触发 */
   onClick: (event: MouseEvent) => void
+  /**完全展示后触发 */
   afterShow: () => void
+  /**完全关闭后触发 */
   afterClose: () => void
 }
 
