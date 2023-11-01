@@ -25,11 +25,32 @@ export interface OptionKeyType {
 }
 
 export interface TimeSelectProps extends BasicComponent {
+  /**
+   * 是否显示弹层
+   * @default false
+   */
   visible: boolean
+  /**
+   * 是否支持多选
+   * @default false
+   */
   multiple?: boolean
+  /**
+   * 弹层标题
+   * @default 取件时间
+   */
   title?: ReactNode
+  /**
+   * 默认选中的值，非受控
+   */
   defaultValue: DateType[]
+  /**
+   * 数据
+   */
   options: DateType[]
+  /**
+   * 配置数据中的关键字, valueKey, textKey, childrenKey
+   */
   optionKey: OptionKeyType
   onSelect?: (value: DateType[]) => void
   onDateChange?: (date: DateType, value: DateType[]) => void

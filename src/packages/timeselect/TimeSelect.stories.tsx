@@ -166,3 +166,60 @@ export const Customized: Story = {
     },
   },
 }
+
+/**
+ * 支持多选
+ */
+export const Multiple: Story = {
+  name: '支持多选',
+  render: (args) => {
+    const [visible, setVisible] = useState(false)
+    const handleClick = () => {
+      setVisible(true)
+    }
+    const handleSelect = (value) => {
+      setVisible(false)
+    }
+    const handleDateChange = (date, value) => {
+      console.log(date, value)
+    }
+    const handleTimeChange = (time, value) => {
+      console.log(time, value)
+    }
+    return (
+      <div style={{ width: '600px', height: '700px' }}>
+        <Cell title="时间多选" onClick={handleClick} />
+        <TimeSelect
+          {...args}
+          visible={visible}
+          onSelect={handleSelect}
+          onDateChange={handleDateChange}
+          onTimeChange={handleTimeChange}
+        />
+      </div>
+    )
+  },
+  args: {
+    style: { height: '30%' },
+    multiple: true,
+    options: [
+      {
+        value: '20230520',
+        text: '5月20日(今天)',
+        children: [
+          { value: '09', text: '09:00-10:00' },
+          { value: '10', text: '10:00-11:00' },
+          { value: '11', text: '11:00-12:00' },
+        ],
+      },
+      {
+        value: '20230521',
+        text: '5月21日(星期三)',
+        children: [
+          { value: '09', text: '09:00-10:00' },
+          { value: '10', text: '10:00-11:00' },
+        ],
+      },
+    ],
+  },
+}
