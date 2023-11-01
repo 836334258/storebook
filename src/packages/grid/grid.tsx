@@ -7,11 +7,35 @@ import { pxCheck } from '@/utils/px-check'
 export type GridDirection = 'horizontal' | 'vertical'
 
 export interface GridProps {
+  /**
+   * 列数
+   * @default 4
+   *  */
   columns: string | number
+  /**
+   * 格子之间的间距，默认单位为px
+   * @default 0
+   *  */
   gap: string | number
+  /**
+   * 是否将格子内容居中显示
+   * @default center
+   *  */
   center: boolean
+  /**
+   * 是否将格子固定为正方形
+   * @default false
+   *  */
   square: boolean
+  /**
+   * 内容翻转
+   * @default false
+   * */
   reverse: boolean
+  /**
+   * 格子内容排列的方向
+   * @default	vertical
+   *  */
   direction: GridDirection
   className?: string
   style?: CSSProperties
@@ -34,12 +58,12 @@ export const Grid: FunctionComponent<
 } = (props) => {
   const {
     children,
-    columns,
-    gap,
-    center,
-    square,
-    reverse,
-    direction,
+    columns = 4,
+    gap = 0,
+    center = true,
+    square = false,
+    reverse = false,
+    direction = 'vertical',
     style,
     className,
     onClick,

@@ -5,6 +5,10 @@ import { BasicComponent } from '@/utils/typings'
 const prefixCls = 'nut-space'
 
 export interface SpaceProps extends BasicComponent {
+  /**
+   * 间距方向
+   * @default horizontal
+   */
   direction: 'horizontal' | 'vertical'
   align: 'start' | 'end' | 'center' | 'baseline'
   justify:

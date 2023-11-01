@@ -1,6 +1,8 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { Add } from '@nutui/icons-react';
+
 import Button from './index'
 import Image from '../image'
 import Cell from '../cell'
@@ -61,5 +63,13 @@ export const Demo6: Story = {
   args: {
     ...Demo1.args,
     size: 'small',
+  },
+}
+
+export const Demo7: Story = {
+  name: '图标按钮',
+  args: {
+    ...Demo1.args,
+    icon: <Add />,
   },
 }
