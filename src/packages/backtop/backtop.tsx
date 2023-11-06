@@ -7,10 +7,29 @@ import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 declare const window: any
 
 export interface BackTopProps extends BasicComponent {
+  /**
+   * 获取监听的目标元素
+   */
   target: string
+  /**
+   * 页面垂直滚动多高后出现
+   * @default 200
+   */
   threshold: number
+  /**
+   * 设置组件页面层级
+   * @default 10
+   */
   zIndex: number
+  /**
+   * 设置动画持续时间，为 0 时表示无动画
+   * @default 1000
+   */
   duration: number
+  /**
+   * 按钮点击时触发事件
+   * @param event
+   */
   onClick?: (event: MouseEvent<HTMLDivElement>) => void
 }
 
