@@ -1,0 +1,29 @@
+import { Canvas, Meta, ArgTypes } from '@storybook/blocks';
+
+import * as Demo from './Elevator.stories';
+
+<Meta of={Demo} />
+
+# Elevator 电梯楼层
+
+用于列表快速定位以及索引的显示
+
+## Props
+
+<ArgTypes of={Demo} />
+
+## 基础用法
+
+<Canvas of={Demo.Demo1} />
+
+## 自定义索引
+
+<Canvas of={Demo.Demo2} />
+
+## 不展示右侧导航
+
+<Canvas of={Demo.Demo3} />
+
+## 吸顶索引
+
+<Canvas of={Demo.Demo4} />
