@@ -188,7 +188,7 @@ export const Multiple: Story = {
     }
     return (
       <div style={{ width: '600px', height: '700px' }}>
-        <Cell title="时间多选" onClick={handleClick} />
+        <Cell title="时间多选（见console打印内容）" onClick={handleClick} />
         <TimeSelect
           {...args}
           visible={visible}
@@ -218,6 +218,65 @@ export const Multiple: Story = {
         children: [
           { value: '09', text: '09:00-10:00' },
           { value: '10', text: '10:00-11:00' },
+        ],
+      },
+    ],
+  },
+}
+
+/**
+ * 自定义使用场景
+ */
+export const CustomizedScene: Story = {
+  name: '选择城市',
+  render: (args) => {
+    const [visible, setVisible] = useState(false)
+    const [title, setTitle] = useState('请选择城市')
+    const handleClick = () => {
+      setVisible(true)
+    }
+    const handleSelect = (value) => {
+      setVisible(false)
+    }
+    const handleDateChange = (date, value) => {
+      console.log(date, value)
+    }
+    const handleTimeChange = (time, value) => {
+      setVisible(false)
+      setTitle(time.text)
+      console.log(time, value)
+    }
+    return (
+      <div style={{ width: '600px', height: '700px' }}>
+        <Cell title={title} onClick={handleClick} />
+        <TimeSelect
+          {...args}
+          visible={visible}
+          onSelect={handleSelect}
+          onDateChange={handleDateChange}
+          onTimeChange={handleTimeChange}
+        />
+      </div>
+    )
+  },
+  args: {
+    style: { height: '30%' },
+    options: [
+      {
+        value: 'zhejiang',
+        text: '浙江',
+        children: [
+          { value: 'hangzhou', text: '杭州' },
+          { value: 'ningbo', text: '宁波' },
+        ],
+      },
+      {
+        value: 'jiangsu',
+        text: '江苏',
+        children: [
+          { value: 'nanjing', text: '南京' },
+          { value: 'suzhou', text: '苏州' },
+          { value: 'yangzhou', text: '扬州' },
         ],
       },
     ],
