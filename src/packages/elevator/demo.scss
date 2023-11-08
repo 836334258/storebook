@@ -1,3 +1,10 @@
 .demo-component {
   background-color: #fff;
 }
+
+.test{
+  &::-webkit-scrollbar{
+    width: 6px;
+    background-color: aqua;
+  }
+}

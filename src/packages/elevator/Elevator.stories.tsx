@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import Elevator from './index'
+import '../../../.storybook/index.css'
 
 const meta = {
   title: 'Example/Elevator 电梯楼层',
@@ -10,7 +11,7 @@ const meta = {
   },
   render: (args) => {
     return (
-      <div style={{ height: '100%px', width: '800px' }}>
+      <div className='test' style={{ height: '100%', width: '200px' }}>
         <Elevator {...args} />
       </div>
     )
