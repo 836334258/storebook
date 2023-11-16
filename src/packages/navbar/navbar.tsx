@@ -4,13 +4,42 @@ import classNames from 'classnames'
 import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 
 export interface NavBarProps extends BasicComponent {
+  /**
+   * 左侧内容，渲染在返回区域的右侧
+   */
   left: React.ReactNode
+  /**
+   * 返回区域的文字
+   */
   back: React.ReactNode
+  /**
+   * 右侧内容
+   */
   right: React.ReactNode
+  /**
+   * 是否固定
+   * @default false
+   */
   fixed: boolean
+  /**
+   * 是否适配安全区
+   * @default false
+   */
   safeAreaInsetTop: boolean
+  /**
+   * 固定在顶部时，是否在标签位置生成一个等高的占位元素
+   * @default false
+   */
   placeholder: boolean
+  /**
+   * 导航栏层级
+   * @default 10
+   */
   zIndex: number | string
+  /**
+   * 点击返回区域后的回调
+   * @param e 
+   */
   onBackClick: (e: React.MouseEvent<HTMLElement>) => void
   children?: React.ReactNode
 }
