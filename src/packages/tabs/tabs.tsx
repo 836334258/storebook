@@ -15,17 +15,62 @@ export type TabsTitle = {
 }
 
 export interface TabsProps extends BasicComponent {
+  /**
+   * 标签栏样式
+   */
   tabStyle: React.CSSProperties
+  /**
+   * 当前激活 tab 面板的值
+   * @default 0
+   */
   value: string | number
+  /**
+   * 初始化激活 tab 的值
+   * @default 0
+   */
   defaultValue: string | number
+  /**
+   * 标签选中色
+   * @default #1a1a1a
+   */
   activeColor: string
+  /**
+   * 使用横纵方向
+   * @default horizontal
+   */
   direction: 'horizontal' | 'vertical'
+  /**
+   * 选中底部展示样式 可选值 line、smile
+   * @default line
+   */
   activeType: 'line' | 'smile'
+  /**
+   * 切换动画时长,单位 ms 0 代表无动画
+   * @default 300
+   */
   duration: number | string
+  /**
+   * 标题左对齐
+   */
   align: 'left' | 'right'
+  /**
+   * 自定义导航区域
+   */
   title: () => JSX.Element[]
+  /**
+   * 当前激活的标签改变时触发
+   * @param index
+   */
   onChange: (index: string | number) => void
+  /**
+   * 点击标签时触发
+   * @param index
+   */
   onClick: (index: string | number) => void
+  /**
+   * 自动高度
+   * @default false
+   */
   autoHeight: boolean
   children?: React.ReactNode
 }
