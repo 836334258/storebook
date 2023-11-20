@@ -25,22 +25,53 @@ type AddressRef = {
 }
 
 export interface AddressProps extends CascaderProps {
+  /**
+   * 是否打开地址选择
+   */
   visible: boolean
+  /**
+   * 初始地址选择打开/关闭状态
+   */
   defaultVisible: boolean
   value?: CascaderValue
   defaultValue?: CascaderValue
+  /**
+   * 地址选择类型 exist/custom
+   * @default custom
+   */
   type: string
   options: CascaderOption[]
   optionKey: CascaderOptionKey
   format: Record<string, string | number | null>
+  /**
+   * 是否可以切换自定义地址选择，type=‘exist’ 时生效
+   * @default true
+   */
   custom: boolean | string
   existList: AddressList[]
   height: string | number
+  /**
+   * 已有地址列表默认图标，type=‘exist’ 时生效	
+   */
   defaultIcon: React.ReactNode
+  /**
+   * 已有地址列表选中图标，type=‘exist’ 时生效	
+   */
   selectIcon: React.ReactNode
+  /**
+   * 自定义地址与已有地址切换时，自定义返回的按钮图标	
+   */
   backIcon: React.ReactNode
+  /**
+   * 点击’选择其他地址’或自定义地址选择左上角返回按钮触发	
+   * @param data 
+   */
   onSwitch?: (data: { type: string }) => void
   // 仅用于选择已有地址
+  /**
+   * 选择已有地址列表时触发	
+   * @param data 
+   */
   onExistSelect?: (data: AddressList) => void
 }
 

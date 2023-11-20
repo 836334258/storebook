@@ -56,6 +56,9 @@ export interface CascaderProps
   format: Record<string, string | number | null>
   closeable: boolean
   closeIconPosition: string
+  /**
+   * 自定义关闭弹框按钮图标		
+   */
   closeIcon: string
   lazy: boolean
   onLoad: (node: any, resolve: any) => void
