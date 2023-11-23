@@ -34,6 +34,10 @@ export interface CascaderProps
     | 'closeIconPosition'
     | 'onClose'
   > {
+    /**
+     * 是否弹窗状态展示	
+     * @default true
+     */
   popup: boolean
   popupProps: Partial<
     Omit<
@@ -46,23 +50,75 @@ export interface CascaderProps
       | 'onClose'
     >
   >
+  /**
+   * 级联显示隐藏状态	
+   * @default false
+   */
   visible: boolean // popup 显示状态
+  /**
+   * 选中激活颜色	
+   */
   activeColor: string
+  /**
+   * 标记选中的Icon	
+   */
   activeIcon: string
+  /**
+   * 级联数据	
+   */
   options: CascaderOption[]
+  /**
+   * 选中值，受控
+   */
   value?: CascaderValue
+  /**
+   * 默认选中值	
+   */
   defaultValue?: CascaderValue
+  /**
+   * 自定义options中的关键字，valueKey、textKey、childrenKey
+   */
   optionKey: CascaderOptionKey
+  /**
+   * 当options为可转换为树形结构的扁平结构时，配置转换规则
+   */
   format: Record<string, string | number | null>
+  /**
+   * 是否显示关闭按钮，继承 Popup 组件
+   * @default true
+   */
   closeable: boolean
+  /**
+   * 取消按钮位置，继承 Popup 组件	
+   * @default top-right
+   */
   closeIconPosition: string
   /**
    * 自定义关闭弹框按钮图标		
    */
   closeIcon: string
+  /**
+   * 是否开启动态加载	
+   * @default false
+   */
   lazy: boolean
+  /**
+   * 动态加载回调，开启动态加载时生效	
+   * @param node 
+   * @param resolve 
+   */
   onLoad: (node: any, resolve: any) => void
+  /**
+   * 选中值改变时触发	
+   * @param value 
+   * @param params 
+   */
   onChange: (value: CascaderValue, params?: any) => void
+  /**
+   * 选中项改变时触发	
+   * @param value 
+   * @param params 
+   */
   onPathChange: (value: CascaderValue, params: any) => void
 }
 
