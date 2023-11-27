@@ -7,14 +7,44 @@ import Cell from '@/packages/cell'
 import { FormInstance } from '@/packages/form/types'
 
 export interface FormProps extends BasicComponent {
+  /**
+   * 表单底部区域，一般放置确认和重置按钮
+   * @default null
+   */
   footer: ReactNode
+  /**
+   * 表单初始值	
+   */
   initialValues: any
+  /**
+   * 表单名称	
+   */
   name: string
+  /**
+   * 经 Form.useForm() 创建的 form 控制实例，不提供时会自动创建
+   */
   form: any
   divider: boolean
+  /**
+   * 表单项 label 的位置	
+   *  @default right
+   */
   labelPosition: 'top' | 'left' | 'right'
+  /**
+   * 必填表单项 label 的红色星标位置	
+   * @default left
+   */
   starPosition: 'left' | 'right'
+  /**
+   * 校验成功后触发	
+   * @param values 
+   */
   onFinish: (values: any) => void
+  /**
+   * 任一表单项被校验失败后触发	
+   * @param values 
+   * @param errorFields 
+   */
   onFinishFailed: (values: any, errorFields: any) => void
 }
 
