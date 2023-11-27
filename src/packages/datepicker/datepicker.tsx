@@ -6,10 +6,29 @@ import { usePropsValue } from '@/utils/use-props-value'
 import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 
 export interface DatePickerProps extends BasicComponent {
+  /**
+   * 受控
+   * @default null
+   */
   value?: Date
+  /**
+   * 初始值
+   * @default null
+   */
   defaultValue?: Date
+  /**
+   * 是否可见	
+   * @default false
+   */
   visible: boolean
+  /**
+   * 设置标题	
+   */
   title: string
+  /**
+   * 类时间类型，可选值 date time year-month month-day datehour datetime hour-minutes
+   * @default date
+   */
   type:
     | 'date'
     | 'time'
@@ -18,18 +37,63 @@ export interface DatePickerProps extends BasicComponent {
     | 'datehour'
     | 'datetime'
     | 'hour-minutes'
+    /**
+     * 每列是否展示中文	
+     * @default false
+     */
   showChinese: boolean
+  /**
+   * 分钟步进值	
+   * @default 1
+   */
   minuteStep: number
+  /**
+   * 开始日期	
+   * @default 十年前
+   */
   startDate: Date
+  /**
+   * 结束日期	
+   * @default 十年后
+
+   */
   endDate: Date
+  /**\
+   * 是否开启3D效果	
+   * @default true
+   */
   threeDimensional: boolean
+  /**
+   * 选项格式化函数	
+   * @param type 
+   * @param option 
+   */
   formatter: (type: string, option: PickerOption) => PickerOption
+  /**
+   * 选项过滤函数	
+   * @param type 
+   * @param option 
+   */
   filter: (type: string, option: PickerOption[]) => PickerOption[]
+  /**
+   * 确定和取消时，都触发
+   */
   onClose: () => void
+  /**
+   * 点击确定按钮时触发	
+   * @param selectedOptions 
+   * @param selectedValue 
+   */
   onConfirm: (
     selectedOptions: PickerOption[],
     selectedValue: (string | number)[]
   ) => void
+  /**
+   * 选项改变时触发	
+   * @param selectedOptions 
+   * @param selectedValue 
+   * @param columnIndex 
+   */
   onChange?: (
     selectedOptions: PickerOption[],
     selectedValue: (string | number)[],
