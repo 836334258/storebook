@@ -12,16 +12,58 @@ import Context from '../checkboxgroup/context'
 import { usePropsValue } from '@/utils/use-props-value'
 
 export interface CheckboxProps extends BasicComponent {
+  /**
+   * 是否选中
+   * @default false
+   */
   checked: boolean
+  /**
+   * 是否禁用选择
+   * @default false
+   */
   disabled: boolean
+  /**
+   * 初始是否选中
+   * @default false
+   */
   defaultChecked: boolean
+  /**
+   * 文本所在的位置
+   * @default right
+   */
   labelPosition: 'left' | 'right'
+  /**
+   * 选中前
+   * @default CheckNormal
+   */
   icon: React.ReactNode
+  /**
+   * 选中后
+   * @default Checked
+   */
   activeIcon: React.ReactNode
+  /**
+   * 半选状态
+   * @default CheckDisabled
+   */
   indeterminateIcon: React.ReactNode
+  /**
+   * 标识值，用于 Group 模式
+   */
   value: string | number
+  /**
+   * 半选状态
+   * @default CheckDisabled
+   */
   indeterminate: boolean
+  /**
+   * 复选框的文本内容
+   */
   label: string | number
+  /**
+   * 值变化时触发
+   * @param value
+   */
   onChange: (value: boolean) => void
 }
 
