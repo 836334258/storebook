@@ -23,6 +23,7 @@ package-lock.json
 /tsc/test
 /site_docs
 /coverage
+/storybook-static
 
 # local env files
 .env.local
