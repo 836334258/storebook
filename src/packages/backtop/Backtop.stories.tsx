@@ -10,6 +10,13 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+} satisfies Meta<typeof BackTop>
+
+export default meta
+type Story = StoryObj<typeof meta>
+
+export const Demo1: Story = {
+  name: '基本用法',
   render: (args) => (
     <>
       <div
@@ -23,13 +30,6 @@ const meta = {
       <BackTop {...args} />
     </>
   ),
-} satisfies Meta<typeof BackTop>
-
-export default meta
-type Story = StoryObj<typeof meta>
-
-export const Demo1: Story = {
-  name: '基本用法',
   args: {
     target: 'target',
   },
