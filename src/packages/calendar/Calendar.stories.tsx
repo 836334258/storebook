@@ -26,6 +26,28 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Demo1: Story = {
   name: '基础用法',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    startDate: {
+      table: {
+        disable: true,
+      },
+    },
+    endDate: {
+      table: {
+        disable: true,
+      },
+    },
+    type: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [date, setDate] = useState('')
     const [isVisible, setIsVisible] = useState(false)
@@ -66,6 +88,28 @@ export const Demo1: Story = {
 
 export const Demo2: Story = {
   name: '区间选择',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    startDate: {
+      table: {
+        disable: true,
+      },
+    },
+    endDate: {
+      table: {
+        disable: true,
+      },
+    },
+    type: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [date1, setDate1] = useState(['2019-12-23', '2019-12-26'])
     const [isVisible1, setIsVisible1] = useState(false)
@@ -105,6 +149,28 @@ export const Demo2: Story = {
 
 export const Demo3: Story = {
   name: '选择多个日期',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    startDate: {
+      table: {
+        disable: true,
+      },
+    },
+    endDate: {
+      table: {
+        disable: true,
+      },
+    },
+    type: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [date3, setDate3] = useState('')
     const [isVisible3, setIsVisible3] = useState(false)
@@ -146,6 +212,28 @@ export const Demo3: Story = {
 
 export const Demo4: Story = {
   name: '选择周',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    startDate: {
+      table: {
+        disable: true,
+      },
+    },
+    endDate: {
+      table: {
+        disable: true,
+      },
+    },
+    type: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [date3, setDate3] = useState('')
     const [isVisible3, setIsVisible3] = useState(false)
@@ -235,6 +323,28 @@ export const Demo5: Story = {
 
 export const Demo6: Story = {
   name: '自定义日历-自定义时间文案',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    startDate: {
+      table: {
+        disable: true,
+      },
+    },
+    endDate: {
+      table: {
+        disable: true,
+      },
+    },
+    type: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [date3, setDate3] = useState('')
     const [isVisible3, setIsVisible3] = useState(false)

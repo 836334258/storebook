@@ -26,6 +26,33 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Demo1: Story = {
   name: '基础用法',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    closeable: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [isVisibleDemo1, setIsVisibleDemo1] = useState(false)
     const [value1, setValue1] = useState([])
@@ -110,6 +137,7 @@ export const Demo1: Story = {
           }}
         />
         <Cascader
+          {...args}
           popupProps={{
             className: 'cascader-popup',
           }}
@@ -131,6 +159,33 @@ export const Demo1: Story = {
 
 export const Demo2: Story = {
   name: '自定义属性名称',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    closeable: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [isVisibleDemo2, setIsVisibleDemo2] = useState(false)
     const [value2, setValue2] = useState(['福建', '福州', '台江区'])
@@ -215,6 +270,7 @@ export const Demo2: Story = {
           }}
         />
         <Cascader
+          {...args}
           visible={isVisibleDemo2}
           value={value2}
           title="地址选择"
@@ -238,6 +294,33 @@ export const Demo2: Story = {
 
 export const Demo3: Story = {
   name: '动态加载',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    closeable: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [isVisibleDemo3, setIsVisibleDemo3] = useState(false)
     const [value3, setValue3] = useState(['A0', 'A12', 'A23', 'A32'])
@@ -281,6 +364,7 @@ export const Demo3: Story = {
           }}
         />
         <Cascader
+          {...args}
           visible={isVisibleDemo3}
           value={value3}
           title="地址选择"
@@ -300,6 +384,33 @@ export const Demo3: Story = {
 
 export const Demo4: Story = {
   name: '部分数据动态加载',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    closeable: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [isVisibleDemo4, setIsVisibleDemo4] = useState(false)
     const [value4, setValue4] = useState([])
@@ -346,6 +457,7 @@ export const Demo4: Story = {
           }}
         />
         <Cascader
+          {...args}
           visible={isVisibleDemo4}
           value={value4}
           title="地址选择"
@@ -366,6 +478,33 @@ export const Demo4: Story = {
 
 export const Demo5: Story = {
   name: '自动转换',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    closeable: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const [isVisibleDemo5, setIsVisibleDemo5] = useState(false)
     const [value5, setValue5] = useState(['广东省', '广州市'])
@@ -400,6 +539,7 @@ export const Demo5: Story = {
           }}
         />
         <Cascader
+          {...args}
           visible={isVisibleDemo5}
           value={value5}
           title="地址选择"
@@ -419,6 +559,33 @@ export const Demo5: Story = {
 
 export const Demo6: Story = {
   name: '自定义样式',
+  argTypes: {
+    visible: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    closeable: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: ({ ...args }) => {
     const customTheme = {
       nutuiCascaderItemHeight: '48px',
@@ -512,6 +679,7 @@ export const Demo6: Story = {
         />
         <ConfigProvider theme={customTheme}>
           <Cascader
+            {...args}
             visible={isVisibleDemo6}
             activeColor="#3768FA"
             activeIcon="star"
