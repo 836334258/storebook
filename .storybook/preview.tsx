@@ -1,9 +1,16 @@
 import type { Preview } from '@storybook/react'
 import '@nutui/nutui-react/dist/style.css'
-// import './index.css'
+import './index.css'
+import React from 'react'
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+        <Story />
+    ),
+  ],
   parameters: {
+    layout: 'centered',
     actions: { argTypesRegex: '^on[A-Z].*' },
     docs: {
       toc: true, // 👈 Enables the table of contents

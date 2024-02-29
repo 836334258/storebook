@@ -11,7 +11,7 @@ const meta = {
   },
   render: (args) => {
     return (
-      <div className='test' style={{ height: '100%', width: '200px' }}>
+      <div className='test'>
         <Elevator {...args} />
       </div>
     )

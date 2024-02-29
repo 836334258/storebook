@@ -51,26 +51,26 @@ export interface AddressProps extends CascaderProps {
   existList: AddressList[]
   height: string | number
   /**
-   * 已有地址列表默认图标，type=‘exist’ 时生效	
+   * 已有地址列表默认图标，type=‘exist’ 时生效
    */
   defaultIcon: React.ReactNode
   /**
-   * 已有地址列表选中图标，type=‘exist’ 时生效	
+   * 已有地址列表选中图标，type=‘exist’ 时生效
    */
   selectIcon: React.ReactNode
   /**
-   * 自定义地址与已有地址切换时，自定义返回的按钮图标	
+   * 自定义地址与已有地址切换时，自定义返回的按钮图标
    */
   backIcon: React.ReactNode
   /**
-   * 点击’选择其他地址’或自定义地址选择左上角返回按钮触发	
-   * @param data 
+   * 点击’选择其他地址’或自定义地址选择左上角返回按钮触发
+   * @param data
    */
   onSwitch?: (data: { type: string }) => void
   // 仅用于选择已有地址
   /**
-   * 选择已有地址列表时触发	
-   * @param data 
+   * 选择已有地址列表时触发
+   * @param data
    */
   onExistSelect?: (data: AddressList) => void
 }

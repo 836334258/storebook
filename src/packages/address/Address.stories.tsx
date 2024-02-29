@@ -95,6 +95,7 @@ export const Demo1: Story = {
             onClick={() => setVisible(true)}
           />
           <Address
+            {...args}
             visible={visible}
             options={optionsDemo1}
             title="选择地址"
@@ -167,6 +168,7 @@ export const Demo2: Story = {
             onClick={() => setVisible(true)}
           />
           <Address
+            {...args}
             visible={visible}
             type="exist"
             existList={existList}
@@ -244,6 +246,7 @@ export const Demo3: Story = {
           onClick={() => setVisible(true)}
         />
         <Address
+          {...args}
           visible={visible}
           type="exist"
           existList={existList}
@@ -335,6 +338,7 @@ export const Demo4: Story = {
           onClick={() => addressRef.current?.open()}
         />
         <Address
+          {...args}
           ref={addressRef}
           defaultVisible={false}
           options={optionsDemo}

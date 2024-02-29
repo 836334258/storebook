@@ -28,4 +28,5 @@ export const Primary: Story = {
     thousands: true,
     price: 19.8,
   },
+
 }

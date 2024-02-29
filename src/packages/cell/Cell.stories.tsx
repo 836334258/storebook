@@ -5,7 +5,9 @@ import Cell from '../cell'
 
 const meta = {
   title: 'Example/Cell 单元格',
-  component: Cell,
+  render: ({ ...args }) => {
+    return <Cell {...args} />
+  },
   parameters: {
     layout: 'centered',
   },

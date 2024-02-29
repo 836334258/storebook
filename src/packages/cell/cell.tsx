@@ -5,17 +5,29 @@ import CellGroup from '@/packages/cellgroup'
 import CellGroupContext from '@/packages/cellgroup/context'
 
 export interface CellProps extends BasicComponent {
-  /**分组标题	 */
+  /**
+   * 分组标题
+   * @default
+   */
   title: ReactNode
-  /**描述	 */
+  /**
+   * 描述
+   * @default
+   */
   description: ReactNode
-  /**右侧描述	 */
+  /**
+   * 右侧描述
+   * @default
+   * */
   extra: ReactNode
-  /**radius */
+  /**
+   * radius */
   radius: string | number
-  /**纵轴方向上的对齐方式，可选值为：flex-start、center、flex-end */
+  /**
+   * 纵轴方向上的对齐方式，可选值为：flex-start、center、flex-end */
   align: string
-  /**点击事件	 */
+  /**
+   * 点击事件   */
   onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
@@ -26,7 +38,8 @@ export const defaultProps = {
   extra: null,
   radius: '6px',
   align: 'flex-start',
-  onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {},
+  onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  },
 } as CellProps
 
 const classPrefix = 'nut-cell'
@@ -34,17 +47,26 @@ const classPrefix = 'nut-cell'
 export const Cell: FunctionComponent<
   Partial<CellProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>
 > & { Group: typeof CellGroup } = ({
-  children,
-  onClick,
-  title = null,
-  description = null,
-  extra = null,
-  radius = '6px',
-  align = 'flex-start',
-  className,
-  style,
-  ...rest
-}) => {
+                                     children,
+                                     onClick,
+                                     /**
+                                      * 标题
+                                      */
+                                     title = null,
+                                     /**
+                                      * 描述
+                                      */
+                                     description = null,
+                                     /**
+                                      * 右侧描述
+                                      */
+                                     extra = null,
+                                     radius = '6px',
+                                     align = 'flex-start',
+                                     className,
+                                     style,
+                                     ...rest
+                                   }) => {
   const ctx = useContext(CellGroupContext)
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -61,8 +83,8 @@ export const Cell: FunctionComponent<
     title || description
       ? {}
       : {
-          flex: 1,
-        }
+        flex: 1,
+      }
   return (
     <div
       className={classNames(classPrefix, className)}
