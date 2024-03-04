@@ -5,14 +5,30 @@ import { BasicComponent, ComponentDefaults } from '@/utils/typings'
 
 export interface StepsProps extends BasicComponent {
   value: number
+  /**
+   * 显示方向
+   * @default horizontal
+   */
   direction: string
+  /**
+   * 点状步骤条
+   * @default false
+   */
   dot: boolean
+  /**
+   * 点击步骤的标题或图标时触发
+   * @param index
+   */
   onStepClick: (index: number) => void
 }
 
 export const defaultProps = {
   ...ComponentDefaults,
   value: 0,
+  /**
+   * 显示方向
+   * @default horizontal
+   */
   direction: 'horizontal',
   dot: false,
 } as StepsProps

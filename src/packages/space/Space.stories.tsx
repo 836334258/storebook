@@ -17,8 +17,8 @@ type Story = StoryObj<typeof meta>
 
 export const Demo1: Story = {
   name: '基本用法',
-  render: () => (
-    <Space>
+  render: (args) => (
+    <Space {...args}>
       <Button>按钮1</Button>
       <Button>按钮2</Button>
       <Button>按钮3</Button>

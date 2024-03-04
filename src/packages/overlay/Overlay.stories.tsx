@@ -34,7 +34,7 @@ type Story = StoryObj<typeof meta>
 export const Demo1: Story = {
   name: '基础样式',
   args: {
-    visible: true,
+    visible: false,
     closeOnOverlayClick: true,
     lockScroll: false,
   },

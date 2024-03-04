@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import FixedNav from './index'
 import { Drag } from '../drag/drag'
 
@@ -30,6 +30,7 @@ export const Demo1: Story = {
     const change = (value: boolean) => {
       setVisible(value)
     }
+
     return (
       <div style={{ height: '200px', width: '1000px' }}>
         <FixedNav visible={visible} onChange={change} {...args} />

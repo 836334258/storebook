@@ -56,6 +56,7 @@ export const Demo1: Story = {
             onClose={() => {
               changeNarBar(false)
             }}
+            {...args}
           >
             <SubSideNavBar title="一级标题" value="1-0">
               <SideNavBarItem title="一级内容1" value="1-01" />
